@@ -42,11 +42,11 @@ const slidesData = [
 
 // Featured products for the homepage (5 items)
 const featuredProducts = [
-    { id: "f1", name: "Caja Sorpresa Pasteles x4", img: "https://scontent.flim28-2.fna.fbcdn.net/v/t39.30808-6/471225632_2092010577909398_6784466255018233532_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=q69_E2oy7MYQ7kNvwGkkHQ5&_nc_oc=AdnayiioQg_R6e_Ng0A72zJ6SHoeLtU7DDyjSCExsQlxP2WdLUDkJcg28UsYDyHVpGo&_nc_zt=23&_nc_ht=scontent.flim28-2.fna&_nc_gid=1W7mM-qtW0rXD34zVeWBRA&oh=00_AfY8blvyJMn8bqI6ZHHpFezk48d5sWeMTzBDH6KJ2Ob5Nw&oe=68CA5AE5", desc: "Selección de 4 mini pasteles" },
-    { id: "f2", name: "Cheesecake", img: "https://scontent.flim28-2.fna.fbcdn.net/v/t1.6435-9/67431267_718404525270017_5885446801569349632_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Fudd_cxFOW8Q7kNvwGWh3wZ&_nc_oc=Adkn4nl4x1OEAVQD9rNoRYxdgj2Qx_eFzzXNfxdYL2rfsuzBokV_wDRBlcjcBoGAXJ4&_nc_zt=23&_nc_ht=scontent.flim28-2.fna&_nc_gid=Jp1w15cN6Bgapxwn0UmU_A&oh=00_Afa3Fn7SGdpjbbYKEnlxCOlNNyFn71zYn_QjB4rnt7kO6A&oe=68EBCDB8", desc: "Perfecto para festejos pequeños" },
-    { id: "f3", name: "Pastel Personalizado 20cm", img: "https://scontent.flim28-1.fna.fbcdn.net/v/t39.30808-6/508333135_10237621421896033_5824103227284096968_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fiAYZxYVqrUQ7kNvwFZiK10&_nc_oc=AdmflcC3yKeOEZRxgwEdUlFeE9T4Xh9lAc80ugrQ6ktDQ_SvXA__60okuXoi6aP3A1k&_nc_zt=23&_nc_ht=scontent.flim28-1.fna&_nc_gid=pxsVyEcZjtpoUPyiVCWdgg&oh=00_AfYujufdgP3qGBZ-Sbrilsya3rPvI3BLWiMz-hQwb4KP5w&oe=68CA4871", desc: "Diseños según tu pedido" },
-    { id: "f4", name: "Bandeja de Cookies", img: "https://scontent.flim28-1.fna.fbcdn.net/v/t39.30808-6/505828486_10237506425181187_6353489940829777157_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=27J0T_znYysQ7kNvwHgDV5_&_nc_oc=AdnqWzeDEBxcKfDZwg2RG4wYkAM_83SaQrHMpBUitrLAreqBuon0iJO4yAp0Vic-YDA&_nc_zt=23&_nc_ht=scontent.flim28-1.fna&_nc_gid=oIcpDC8UD_lhStlTIO_rQw&oh=00_AfYy6hI1ApyFrmgsEwF6nhhu4tFWbRiId2x4iZOtJGXtjg&oe=68CA4FFA", desc: "10 unidades surtidas" },
-    { id: "f5", name: "Cupcakes Premium x12", img: "https://scontent.flim28-2.fna.fbcdn.net/v/t39.30808-6/470886602_2089867798123676_4029737239250229463_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=GAu5N5rP67YQ7kNvwGzaGhC&_nc_oc=AdmKleiSWAO4cldsgkz_XYPIaZuQJuLmST3ETVfEWMHfMAuAMJ8r6HzW4J6HfNsgK-U&_nc_zt=23&_nc_ht=scontent.flim28-2.fna&_nc_gid=q55Fn5q-e-4IxVoK-6N0OQ&oh=00_AfbAXGCO0A2rqKwHYHQzcB4_p7u3BNxsPTj5ugZd4Y_SDg&oe=68CA580A", desc: "Decoración gourmet" }
+    { id: "f1", name: "Caja Sorpresa Pasteles x4", img: "https://i.postimg.cc/tCMQ0Tx3/caja-sorpresa.jpg", desc: "Selección de 4 mini pasteles" },
+    { id: "f2", name: "Cheesecake", img: "https://i.postimg.cc/0jZxF1gb/Cheesecake1.png", desc: "Perfecto para festejos pequeños" },
+    { id: "f3", name: "Pastel Personalizado 20cm", img: "https://i.postimg.cc/BQnQSTFK/smiling-critters.jpg", desc: "Diseños según tu pedido" },
+    { id: "f4", name: "Bandeja de Cookies", img: "https://i.postimg.cc/SQrxbTn4/cookies.jpg", desc: "10 unidades surtidas" },
+    { id: "f5", name: "Cupcakes Premium x12", img: "https://i.postimg.cc/NFps8M3F/cup-cake-unicornio.jpg", desc: "Decoración gourmet" }
 ];
 
 /* ================ Helpers ================ */
@@ -191,4 +191,5 @@ document.querySelector('.carousel').addEventListener('focusin', stopAutoplay);
 document.querySelector('.carousel').addEventListener('focusout', startAutoplay);
 
 // init: ensure track width recalculated when images load (so translate works)
+
 window.addEventListener('load', () => goTo(0));
